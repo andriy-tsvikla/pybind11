@@ -57,9 +57,9 @@ endif()
 
 # Use the Python interpreter to find the libs.
 if(PythonLibsNew_FIND_REQUIRED)
-    find_package(PythonInterp ${PythonLibsNew_FIND_VERSION} REQUIRED)
+    find_package(PythonInterp 3.6.9 REQUIRED)
 else()
-    find_package(PythonInterp ${PythonLibsNew_FIND_VERSION})
+    find_package(PythonInterp 3.6.9)
 endif()
 
 if(NOT PYTHONINTERP_FOUND)
